@@ -3,11 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "source": "src/index.html",
+  "browserslist": "> 1%, last 2 versions , not dead, last 3 chrome version, last 3 firefox version",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "dependencies": {},
   "devDependencies": {
     "parcel": "^2.14.0"
   }
