@@ -1,0 +1,56 @@
+.popup{
+    width:100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #00000070;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-text;
+    a{
+        color: $color-text;
+
+        :hover{
+            color: $color-secundari;
+        }
+    }
+    #tancar-popup{
+        margin-top:30px;
+        font-size: $font-mida-petita;
+    }
+}
+
+.popup-quadre{
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    background-color: $color-fons;
+
+    padding: $padding-gran;
+    display: flex;
+    flex-direction: column;
+    
+    border: solid 3px #000;
+    border-radius: 12px;
+
+    @media (width < $mida-mobil) {
+        width: 380px;
+        height: 320px;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+input, button{
+    padding:6px;
+    width: 100%;
+    border-radius: 12px;;
+}
