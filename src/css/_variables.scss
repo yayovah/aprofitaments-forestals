@@ -4,13 +4,15 @@ $color-secundari: #412200;
 $color-text: #1b1400;
 $color-text-destacat: #5a0011;
 $color-text-clar: #fffef4;
+$color-fons-principal: #4b7b773d;
 $color-fons: #fffdf8;
 
 /*FONTS*/
 $font-mida-petita: 12px; 
 $font-mida-normal: 20px;
-$font-mida-gran: 34px;
-$font-mida-gegant: 64px;
+$font-mida-mitjana: 30px;
+$font-mida-gran: 48px;
+$font-mida-gegant: 72px;
 
 $font-pes-normal: 400;
 $font-pes-grossa: 800;
@@ -20,9 +22,13 @@ $alcada-gran: 2;
 $alcada-apretada: 1.25;
 
 @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 
 $font-principal: "National Park", sans-serif;
 $font-secundaria: "Montserrat", sans-serif;
+$font-titols: "Coiny", system-ui;
+$font-logo: "Rubik Bubbles", system-ui;
 
 /*MIDES*/
 

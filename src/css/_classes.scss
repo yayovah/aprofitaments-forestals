@@ -1,16 +1,21 @@
 .header-portada{
     height: 100vh;
     background-image: url("/src/img/bosc.jpg");
-    background-position:top center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .content-inici{
-    
+    text-align: center;
     background-color: $color-fons;
     color: $color-text;
-    padding: $padding-normal;
+    padding: $padding-gran $padding-normal;
+    width: $amplada-escriptori;
+    display: flex;
+    flex-direction: column;
+    gap:48px
 }
 
 .content-categories{
@@ -21,23 +26,37 @@
 }
 
 .categoria{
-    width:350px;
-    height: 350px;
-    border-radius: 32px;
+    width:300px;
+    height: 300px;
+    border-radius: 175px;
     border-style: solid 1px $color-principal;
     box-shadow: 7px 9px 20px #00000054;
     text-align: center;
     overflow: hidden;
+
     //padding: $padding-gran;
     
     img{
+        filter: brightness(0.6);
         position:relative;
         object-fit:fill;
         height: 100%;
     }
     h3{
         position: relative;
-        top: -200px;
+        top: -180px;
         color: $color-text-clar;
+        font-size: $font-mida-mitjana;
+        font-family: $font-principal;
+        text-shadow: 4px 4px #00000054;
     }
+
+    :hover{
+        filter:sepia(0) brightness(1);
+        transition-duration: 1s;
+    }
+}
+
+.fons-fosc-transparent{
+    background-color: #00000073;
 }
