@@ -29,7 +29,6 @@
     width:300px;
     height: 300px;
     border-radius: 175px;
-    border-style: solid 1px $color-principal;
     box-shadow: 7px 9px 20px #00000054;
     text-align: center;
     overflow: hidden;
@@ -52,8 +51,10 @@
     }
 
     :hover{
-        filter:sepia(0) brightness(1);
-        transition-duration: 1s;
+        box-shadow: none;
+        filter:brightness(1);
+        transition-duration: 800ms;
+        
     }
 }
 
