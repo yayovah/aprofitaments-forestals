@@ -7,16 +7,66 @@
     background-attachment: fixed;
 }
 
+.content-general{
+    text-align: center;
+    padding: $padding-gran $padding-normal;
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+}
+
+.content-articles{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
 .article-resum{
+    position: relative;
     width:300px;
     border: solid 1px;
     padding: $padding-normal;
     overflow: hidden;
-    background-color: $color-principal;
+    background-color: $color-fons;
     border-radius: 12px;
-
+    color: $color-text;
+    height: 600px;
     h3{
         text-align: center;
-
     }
+}
+
+.veure-mes{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    font-size: $font-mida-petita;
+    padding: $padding-normal;
+    color: $color-principal;
+}
+
+.carrousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    figure{
+        width:30%;
+    }
+}
+
+.content-video{
+    text-align: center;
+    padding: $padding-gran;
+    background-color: $color-principal;
+    width: $amplada-escriptori;
+    color:$color-text-clar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
 }
