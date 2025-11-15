@@ -1,5 +1,5 @@
 .header-general{
-    height: 250px;
+    height: 320px;
     background-image: url("/src/img/bosc.jpg");
     background-position:center;
     background-repeat: no-repeat;
@@ -40,6 +40,14 @@
     img{
         height: 180px;
     }
+    @media (width < $amplada-escriptori) {
+      width: 100%;
+    }
+
+    @media (width < $mida-mobil) {
+      padding: $padding-normal $padding-petit;
+    }
+
 }
 
 .veure-mes{

@@ -56,8 +56,9 @@
     border-radius: 12px;
 
     @media (width < $mida-mobil) {
-        width: 380px;
-        height: 320px;
+           padding: $padding-normal;
+        width: 370px;
+
     }
 }
 
