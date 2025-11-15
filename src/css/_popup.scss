@@ -6,7 +6,7 @@
     position: fixed;
     top:0;
     left:0;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,26 @@
 
         :hover{
             color: $color-secundari;
+            text-decoration: underline;
         }
     }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+
+    input, button{
+        padding:6px;
+        width: 100%;
+        border-radius: 12px;;
+    }
+
+    label{
+        font-size: $font-mida-petita;
+    }
+
     #tancar-popup{
         margin-top:30px;
         font-size: $font-mida-petita;
@@ -43,14 +61,3 @@
     }
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap:12px;
-}
-
-input, button{
-    padding:6px;
-    width: 100%;
-    border-radius: 12px;;
-}
