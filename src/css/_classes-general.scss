@@ -39,6 +39,8 @@
     }
     img{
         height: 180px;
+        object-fit: cover; 
+        object-position: center;
     }
     @media (width < $amplada-escriptori) {
       width: 100%;
@@ -65,8 +67,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width:100%;
+    @media(max-width: 900px){
+        flex-direction: column;
+        align-items: center;
+    }
     figure{
+        padding:0;
         width:30%;
+        img{
+            margin: 0;
+            width:100%;
+
+        }
     }
 }
 
@@ -80,6 +93,16 @@
     flex-direction: column;
     align-items: center;
     gap:30px;
+
+    @media (max-width: 960px) {
+        width:100%;
+    }
+
+    iframe{
+        width:560px;
+        height:315px;
+        max-width: 100%;
+    }
 }
 
 .content-links{
@@ -89,4 +112,6 @@
         color: $color-principal;
     }
 }
+
+
 

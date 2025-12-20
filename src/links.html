@@ -1,55 +1,87 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ca">
-<head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Xavier Vallverdú i Poblet">
-    <meta name="description" content="Pàgina dedicada als aprofitaments forestals.">
-    <meta name="keywords" content="Bosc, Forestal, Bolets, Llenya, Aprofitament Forestal">
-    <link rel="icon" type="image/svg" href="/src/img/forest.svg">
-    <link rel="stylesheet" href="/src/css/style.scss">
-    <title>Categoria</title>
-</head>
-  <body>
-    <include src="views/nav.html"></include>
-    <include src="views/header.html"></include>
-    <main>  
-      <div class="content-inici content-links">
-      <h2>LINKS</h2>
-        <section>
-          <h3>Fotografies</h3>
-          <p>Foto de portada: <a href="https://unsplash.com/es/@dwell_in?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">daniel james</a> a <a href="https://unsplash.com/es/fotos/arbol-alto-marron-durante-el-dia-nXgivuqiZHs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-          <p>Foto d'Arbolí destacada: Jordi Gili a <a href="https://commons.wikimedia.org/wiki/File:Gallicant_-_2023_20.jpg">Wikimedia</a></p>
-          <p>Foto d'Arbolí : jordi domènech a <a href="https://commons.wikimedia.org/wiki/File:Arbol%C3%AD,_carrer_Major_-_panoramio.jpg">Wikimedia</a></p>
-          <p>Foto d'Arbolí: 	Jordi Gili a <a href="https://commons.wikimedia.org/wiki/File:Ermita_de_Sant_Pau_d%27Arbol%C3%AD_04.jpg">Wikimedia</a></p>
-          <p>Foto d'Arbolí: jordi domènech a <a href="https://commons.wikimedia.org/wiki/File:Creu_i_mirador_a_la_carretera_d%27Arbol%C3%AD_-_panoramio.jpg">Wikimedia</a></p>
-          <p>Foto de Prades destacada: SBA73 a <a href="https://www.flickr.com/photos/7455207@N05/4241146592">Flickr</a></p>
-          <p>Foto de Prades: jordi domènech a <a href="https://commons.wikimedia.org/wiki/File:Font_de_la_pla%C3%A7a_Major_de_Prades_-_panoramio.jpg">Wikimedia</a></p>
-          <p>Foto de Prades: calafellvalo a <a href="https://www.flickr.com/photos/calafellvalo/49124404847">Flickr</a></p>
-          <p>Foto de Prades: Future75 a <a href="https://commons.wikimedia.org/wiki/File:Ermita_de_l_Abellera_Prades_edited.JPG">Wikimedia</a></p>
-          <p>Foto de La Riba: Kroaton a <a href="https://commons.wikimedia.org/wiki/File:LaRiba1.jpg">Wikimedia</a></p>
-          <p>Foto de Vilaplana: Xabier Cañas a <a href="https://commons.wikimedia.org/wiki/File:Vilaplana_airetik.jpg">Wikimedia</a></p>
-          <p>Foto de Alcover: Benjaminrennicke a <a href="https://commons.wikimedia.org/wiki/File:Alcover-placa-ajuntament.jpg">Wikimedia</a></p>
-          <p>Foto de Mont-ral: LBM1948 a <a href="https://commons.wikimedia.org/wiki/File:Tarragona_(provincia)_1987_03.jpg">Wikimedia</a></p>
-          <p>Foto de Poblet: Sergi Esteve a <a href="https://commons.wikimedia.org/wiki/File:Monestir_de_Poblet.JPG">Wikimedia</a></p>
-          <p>Foto de L'Albiol: Jordi Gili a <a href="https://commons.wikimedia.org/wiki/File:Sant_Miquel_de_l%27Albiol_11.jpg">Wikimedia</a></p>
-        </section>
-        <section>
-          <h3>Textos</h3>
-          <p>Els textos que apareixen a l'apartat de <a href="/src/categoria.html"> categoria de pobles </a> així com a les pàgines de detall dels pobles 
-            <a href="/src/det1.html">Prades</a> i <a href="/src/det2.html">Arbolí</a> han estat creats per <abbr title="Inteligència Artificial">IA</abbr> generativa amb l'eina <a href="https://chatgpt.com/" target="_blank"><b lang="en"> ChatGPT </b></a></p>
-        </section>
-        <section>
-          <h3>Altres</h3>
-          <p>La icona de la web és de <a href="https://iconscout.com/free-icon-pack/free-city-basic-icons-icon-pack_8718">Icons from City Basic Icons Icon Pack</a></p>
-          <p>Tot el contingut utilitzat que no és de creació pròpia està distribuit sota una llicència que permet el seu seu us en aquesta web.</p>
-        </section>
-      </div>
-    </main>
-    <include src="views/footer.html"></include>
-  </body>
-</html>
- 
 
- 
- 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Xavier Vallverdú i Poblet">
+  <meta name="description" content="Pàgina dedicada als aprofitaments forestals.">
+  <meta name="keywords" content="Bosc, Forestal, Bolets, Llenya, Aprofitament Forestal">
+  <link rel="icon" type="image/svg" href="/src/img/forest.svg">
+  <link rel="stylesheet" href="/src/css/style.scss">
+  <title>Categoria</title>
+</head>
+
+<body>
+  <include src="views/nav.html"></include>
+  <include src="views/header.html"></include>
+  <main>
+    <div class="content-inici content-links">
+      <h2>LINKS</h2>
+      <section>
+        <h3>Fotografies</h3>
+        <p>Foto de portada: <a
+            href="https://unsplash.com/es/@dwell_in?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">daniel
+            james</a> a <a
+            href="https://unsplash.com/es/fotos/arbol-alto-marron-durante-el-dia-nXgivuqiZHs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <p>Foto via làctea: <a href="https://www.pexels.com/es-es/@philippedonn/">Philippe Donn</a> a <a
+            href="https://www.pexels.com/es-es/foto/ilustracion-de-la-via-lactea-1169754/">Pexels</a></p>
+        <p>Foto d'Arbolí destacada: Jordi Gili a <a
+            href="https://commons.wikimedia.org/wiki/File:Gallicant_-_2023_20.jpg">Wikimedia</a></p>
+        <p>Foto d'Arbolí : jordi domènech a <a
+            href="https://commons.wikimedia.org/wiki/File:Arbol%C3%AD,_carrer_Major_-_panoramio.jpg">Wikimedia</a></p>
+        <p>Foto d'Arbolí: Jordi Gili a <a
+            href="https://commons.wikimedia.org/wiki/File:Ermita_de_Sant_Pau_d%27Arbol%C3%AD_04.jpg">Wikimedia</a></p>
+        <p>Foto d'Arbolí: jordi domènech a <a
+            href="https://commons.wikimedia.org/wiki/File:Creu_i_mirador_a_la_carretera_d%27Arbol%C3%AD_-_panoramio.jpg">Wikimedia</a>
+        </p>
+        <p>Foto de Prades destacada: SBA73 a <a href="https://www.flickr.com/photos/7455207@N05/4241146592">Flickr</a>
+        </p>
+        <p>Foto de Prades: jordi domènech a <a
+            href="https://commons.wikimedia.org/wiki/File:Font_de_la_pla%C3%A7a_Major_de_Prades_-_panoramio.jpg">Wikimedia</a>
+        </p>
+        <p>Foto de Prades: calafellvalo a <a href="https://www.flickr.com/photos/calafellvalo/49124404847">Flickr</a>
+        </p>
+        <p>Foto de Prades: Future75 a <a
+            href="https://commons.wikimedia.org/wiki/File:Ermita_de_l_Abellera_Prades_edited.JPG">Wikimedia</a></p>
+        <p>Foto de La Riba: Kroaton a <a href="https://commons.wikimedia.org/wiki/File:LaRiba1.jpg">Wikimedia</a></p>
+        <p>Foto de Vilaplana: Xabier Cañas a <a
+            href="https://commons.wikimedia.org/wiki/File:Vilaplana_airetik.jpg">Wikimedia</a></p>
+        <p>Foto de Alcover: Benjaminrennicke a <a
+            href="https://commons.wikimedia.org/wiki/File:Alcover-placa-ajuntament.jpg">Wikimedia</a></p>
+        <p>Foto de Mont-ral: LBM1948 a <a
+            href="https://commons.wikimedia.org/wiki/File:Tarragona_(provincia)_1987_03.jpg">Wikimedia</a></p>
+        <p>Foto de Poblet: Sergi Esteve a <a
+            href="https://commons.wikimedia.org/wiki/File:Monestir_de_Poblet.JPG">Wikimedia</a></p>
+        <p>Foto de L'Albiol: Jordi Gili a <a
+            href="https://commons.wikimedia.org/wiki/File:Sant_Miquel_de_l%27Albiol_11.jpg">Wikimedia</a></p>
+      </section>
+      <section>
+        <h3>SVGs</h3>
+        <p>Vector de la lluna: Public Domain <a href="https://svgsilh.com/es/image/306569.html">svgsilh</a></p>
+        <p>Vector del sol: Public Domain <a href="https://freesvg.org/crescent-moon">freesvg - OpenClipart</a></p>
+      </section>
+      <section>
+        <h3>Textos</h3>
+        <p>Els textos que apareixen a l'apartat de <a href="/src/categoria.html"> categoria de pobles </a> així com a
+          les pàgines de detall dels pobles
+          <a href="/src/det1.html">Prades</a> i <a href="/src/det2.html">Arbolí</a> han estat creats per <abbr
+            title="Inteligència Artificial">IA</abbr> generativa amb l'eina <a href="https://chatgpt.com/"
+            target="_blank"><b lang="en"> ChatGPT </b></a>
+        </p>
+      </section>
+      <section>
+        <h3>Altres</h3>
+        <p>La icona de la web és de <a
+            href="https://iconscout.com/free-icon-pack/free-city-basic-icons-icon-pack_8718">Icons from City Basic Icons
+            Icon Pack</a></p>
+        <p>Tot el contingut utilitzat que no és de creació pròpia està distribuit sota una llicència que permet el seu
+          seu us en aquesta web.</p>
+      </section>
+    </div>
+  </main>
+  <include src="views/footer.html"></include>
+</body>
+
+</html>

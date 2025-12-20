@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Xavier Vallverdú i Poblet">
     <meta name="description" content="Pàgina dedicada als aprofitaments forestals.">
@@ -10,41 +11,67 @@
     <link rel="stylesheet" href="css/style.scss">
     <title>Inici</title>
 </head>
-  <body>
-    
+
+<body>
+
     <include src="views/nav.html"></include>
     <include src="views/header.html"></include>
-    
+
     <main>
         <section class="content-inici">
             <article>
                 <h2>Prades</h2>
-                <img src="/src/img/pobles/Prades-destacada.jpg"/>
-                <p>Prades és una pintoresca vila situada a la comarca del Baix Camp, a Catalunya, coneguda per la seva bellesa natural i l’encant del seu nucli històric. Rodejada per la serra de Prades, aquest municipi ofereix un paisatge de muntanya amb boscos de pi roig i roures que canviïn de color amb les estacions, convertint-la en una destinació ideal per als amants de la natura i el senderisme. Els carrers empedrats i les cases de pedra amb balcons de fusta aporten un aire medieval que transporta els visitants a una altra època.</p>
-                <p>La vila és famosa pel seu patrimoni arquitectònic i cultural. Destaca l’església parroquial de Santa Maria, amb elements gòtics i barrocs, i l’antic portal de la vila, que recorda l’època en què Prades era un important punt de pas per comerciants i pelegrins. També es poden visitar nombrosos monuments i palaus antics, així com la plaça Major, que actua com a centre neuràlgic on es celebren festes tradicionals, mercats i activitats culturals al llarg de l’any.</p>
-                <p>A més de la seva història i arquitectura, Prades ofereix una àmplia gamma d’activitats d’oci i turisme actiu. Els visitants poden explorar rutes de muntanya, practicar escalada o simplement gaudir de l’aire pur i la tranquil·litat dels seus entorns naturals. La vila també és coneguda per la seva gastronomia, amb restaurants que ofereixen plats tradicionals de la zona elaborats amb productes locals, com bolets, caça i mel. Tot plegat converteix Prades en una destinació perfecta per a aquells que busquen cultura, natura i relax en un entorn autènticament català.</p>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="/src/img/pobles/Prades-destacada.jpg">
+                    <source media="(min-width: 896px)" srcset="/src/img/pobles/Prades-destacada.jpg?width=1200">
+                    <source media="(min-width: 650px)" srcset="/src/img/pobles/Prades-Destacada895.jpg">
+                    <img src="/src/img/pobles/Prades-Destacada895.jpg?width=400" alt="Vista de Prades">
+                </picture>
+                <p>Prades és una pintoresca vila situada a la comarca del Baix Camp, a Catalunya, coneguda per la seva
+                    bellesa natural i l’encant del seu nucli històric. Rodejada per la serra de Prades, aquest municipi
+                    ofereix un paisatge de muntanya amb boscos de pi roig i roures que canviïn de color amb les
+                    estacions, convertint-la en una destinació ideal per als amants de la natura i el senderisme. Els
+                    carrers empedrats i les cases de pedra amb balcons de fusta aporten un aire medieval que transporta
+                    els visitants a una altra època.</p>
+                <p>La vila és famosa pel seu patrimoni arquitectònic i cultural. Destaca l’església parroquial de Santa
+                    Maria, amb elements gòtics i barrocs, i l’antic portal de la vila, que recorda l’època en què Prades
+                    era un important punt de pas per comerciants i pelegrins. També es poden visitar nombrosos monuments
+                    i palaus antics, així com la plaça Major, que actua com a centre neuràlgic on es celebren festes
+                    tradicionals, mercats i activitats culturals al llarg de l’any.</p>
+                <p>A més de la seva història i arquitectura, Prades ofereix una àmplia gamma d’activitats d’oci i
+                    turisme actiu. Els visitants poden explorar rutes de muntanya, practicar escalada o simplement
+                    gaudir de l’aire pur i la tranquil·litat dels seus entorns naturals. La vila també és coneguda per
+                    la seva gastronomia, amb restaurants que ofereixen plats tradicionals de la zona elaborats amb
+                    productes locals, com bolets, caça i mel. Tot plegat converteix Prades en una destinació perfecta
+                    per a aquells que busquen cultura, natura i relax en un entorn autènticament català.</p>
                 <div class="carrousel">
                     <figure>
-                        <img src="/src/img/pobles/Prades1.jpg" alt="Fotografia de la font de Prades"/>
+                        <img src="/src/img/pobles/Prades1.jpg?as=webp&width=224"
+                            alt="Fotografia de la font de Prades" />
                         <figcaption>Font de prades</figcaption>
                     </figure>
                     <figure>
-                        <img src="/src/img/pobles/Prades2.jpg" alt="Fotografia d'un dels carrers de la vila de Prades"/>
+                        <img src="/src/img/pobles/Prades2.jpg?as=webp&width=224"
+                            alt="Fotografia d'un dels carrers de la vila de Prades" />
                         <figcaption>Carrer Major</figcaption>
                     </figure>
                     <figure>
-                        <img src="/src/img/pobles/Prades3.jpg" alt="Fotografia de l'ermita de l'Abellera de Prades"/>
+                        <img src="/src/img/pobles/Prades3.jpg?as=webp&width=224"
+                            alt="Fotografia de l'ermita de l'Abellera de Prades" />
                         <figcaption>Ermita de l'Abellera</figcaption>
                     </figure>
                 </div>
             </article>
         </section>
-        <section  class="content-video">
+        <section class="content-video">
             <h3>Explora Prades en vídeo</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ogTKqxMJl7w?si=jmwxIZcPqGTsiE9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ogTKqxMJl7w?si=jmwxIZcPqGTsiE9k" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
     <include src="views/footer.html"></include>
 </body>
-</html>
 
+</html>

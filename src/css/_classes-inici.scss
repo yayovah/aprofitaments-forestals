@@ -1,13 +1,52 @@
 .header-portada{
     height: 100vh;
-    background-image: url("/src/img/bosc.jpg");
+    position: relative;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
+    background-image: url("/src/img/bosc.jpg");
+    background-image: image-set(
+        url("/src/img/bosc406px.jpg") 1x,
+        url("/src/img/bosc812px.jpg") 2x,
+        url("/src/img/bosc1218px.jpg") 3x,
+    );
+    @media (min-width: 407px) {
+    background-image: image-set(
+        url("/src/img/bosc812px.jpg") 1x,
+        url("/src/img/bosc1624px.jpg") 2x,
+        url("/src/img/bosc3248px.jpg") 3x,
+    );                
+    }
+    @media (min-width: 813px) {
+    background-image: image-set(
+        url("/src/img/bosc1218px.jpg") 1x,
+        url("/src/img/bosc2436px.jpg") 2x,
+        url("/src/img/bosc3654px.jpg") 3x,
+    );                
+    }
+    @media (min-width: 1219px) {
+    background-image: image-set(
+        url("/src/img/bosc1624px.jpg") 1x,
+        url("/src/img/bosc3248px.jpg") 2x,
+        url("/src/img/bosc3654px.jpg") 3x,
+    );                
+    }
+    @media (min-width: 1625px) {
+    background-image: image-set(
+        url("/src/img/bosc2436px.jpg") 1x,
+        url("/src/img/bosc3654px.jpg") 2x,
+    );                
+    }
+
+    animation: diaNit 60s infinite;
+
+
 }
 
 .content-inici{
+
     text-align: center;
     background-color: $color-fons;
     color: $color-text;
@@ -27,6 +66,8 @@
     
 }
 
+
+
 .content-categories{
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +79,7 @@
     width:300px;
     height: 300px;
     border-radius: 175px;
+
     box-shadow: 7px 9px 20px #00000054;
     text-align: center;
     overflow: hidden;
@@ -47,7 +89,7 @@
         position:relative;
         object-fit:fill;
         height: 100%;
-    }
+    }   
     h3{
         position: relative;
         top: -180px;
@@ -55,16 +97,154 @@
         font-size: $font-mida-mitjana;
         font-family: $font-principal;
         text-shadow: 4px 4px #00000054;
+        
     }
 
-    :hover{
+    &:hover{
         box-shadow: none;
-        filter:brightness(1);
         transition-duration: 800ms;
-        
+        img{
+            filter:brightness(1);
+            transition-duration: 1800ms;
+        }
+        h3{
+            animation: animaText 2s ease-in-out 0s 3 normal both;
+        }
     }
 }
 
 .fons-fosc-transparent{
     background-color: #00000073;
+    clip-path: polygon(0% 8%, 1% 0%, 1% 0%, 3% 4%, 3% 4%, 5% 0%, 5% 0%, 8% 7%, 8% 7%, 9% 3%, 9% 3%, 11% 6%, 11% 6%, 13% 0%, 13% 0%, 15% 9%, 15% 12%, 18% 3%, 18% 3%, 20% 7%, 20% 7%, 23% 3%, 23% 3%, 25% 5%, 25% 5%, 27% 1%, 27% 1%, 28% 4%, 28% 4%, 30% 0%, 30% 0%, 32% 4%, 32% 4%, 36% 0%, 36% 0%, 36% 5%, 36% 5%, 38% 0%, 38% 0%, 41% 5%, 41% 5%, 43% 0%, 43% 0%, 45% 6%, 45% 6%, 46% 0%, 46% 0%, 50% 5%, 50% 5%, 51% 0%, 51% 1%, 54% 6%, 54% 6%, 59% 0%, 59% 0%, 60% 6%, 60% 6%, 64% 0%, 64% 0%, 65% 6%, 65% 6%, 69% 0%, 69% 0%, 70% 5%, 70% 5%, 73% 0%, 73% 0%, 75% 5%, 75% 2%, 79% 0%, 79% 0%, 81% 6%, 81% 3%, 84% 0%, 84% 0%, 86% 5%, 86% 2%, 88% 0%, 88% 0%, 91% 8%, 91% 8%, 95% 0%, 95% 0%, 98% 5%, 98% 8%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%);
+}
+
+.clip-path-muntanya{
+    clip-path: polygon(0% 100%, 2% 41%, 6% 50%, 13% 0%, 20% 23%, 23% 17%, 27% 38%, 31% 23%, 34% 32%, 37% 15%, 41% 20%, 45% 6%, 55% 18%, 64% 0%, 76% 56%, 78% 19%, 86% 28%, 92% 1%, 95% 47%, 99% 38%, 100% 100%);
+}
+
+.muntanyes{
+    position:absolute;
+    height:100px;
+    background-color: #000;
+    width:100%;
+    bottom: 0;
+    z-index: 1000;
+
+}
+
+.sol{
+    position: absolute;
+    bottom: 0;
+    left: -10vh;
+    z-index: 200;
+    animation: drawSol 60s linear infinite ;
+    svg{
+    }
+
+    svg path {
+        //animation: draw 100s forwards;
+    }
+
+    svg g {
+    }
+}
+
+.lluna{
+    position: absolute;
+    bottom: 0;
+    left: -10vh;
+    z-index: 200;
+    animation: drawLluna 60s linear infinite ;    
+    svg path {
+        stroke:blue;
+    }
+}
+
+@keyframes drawSol {
+    0%   { fill-opacity: 30; fill: rgb(255, 127, 21); transform: scale(0.8)}
+    5%  { transform: translate(10vw, -3.6vh) scale(1.05);}
+    10%  { transform: translate(21vw, -6.4vh) scale(1.1); }
+    15%  { transform: translate(32vw, -8.4vh) scale(1.15); }
+    20%  { transform: translate(43vw, -9.6vh scale(1.25)); }
+    25%  { transform: translate(54vw, -10vh) scale(1.3);
+            fill-opacity: 100; 
+            fill: rgb(255, 232, 21)}
+    30%  { transform: translate(65vw, -9.6vh) scale(1.15); }
+    35%  { transform: translate(76vw, -8.4vh) scale(1.05); }
+    40%  { transform: translate(87vw, -6.4vh) scale(1.00); }
+    45%  { transform: translate(98vw, -3.6vh) scale(0.9); }
+   50%  { transform: translate(110vw, 0vh) scale(0.8);
+            fill-opacity: 20; 
+            fill: rgb(231, 73, 0)}
+   100%  { transform: translate(110vw, 0vh) scale(0);
+            fill-opacity: 0;  }
+}
+@keyframes drawLluna {
+    0%   { fill-opacity: 30; fill: rgb(255, 127, 21); transform: scale(0.8)}
+    50%   { fill-opacity: 30; fill: rgb(255, 127, 21); transform: scale(0.8)}
+    55%  { transform: translate(10vw, -3.6vh) scale(1.05);}
+    60%  { transform: translate(21vw, -6.4vh) scale(1.1); }
+    65%  { transform: translate(32vw, -8.4vh) scale(1.15); }
+    70%  { transform: translate(43vw, -9.6vh scale(1.25)); }
+    75%  { transform: translate(54vw, -10vh) scale(1.3);
+            fill-opacity: 100; 
+            fill: rgb(255, 232, 21)}
+    80%  { transform: translate(65vw, -9.6vh) scale(1.15); }
+    85%  { transform: translate(76vw, -8.4vh) scale(1.05); }
+    90%  { transform: translate(87vw, -6.4vh) scale(1.00); }
+    95%  { transform: translate(98vw, -3.6vh) scale(0.9); }
+   100%  { transform: translate(110vw, 0vh) scale(0.8);
+            fill-opacity: 20; 
+            fill: rgb(231, 73, 0)}
+}
+
+@keyframes animaText{
+    0%   {  transform: scale(1);}     
+    10%  {  transform: scale(3.2) rotate(30deg); 
+            color: #000;}
+    50%  {  transform: scale(0.6) rotate(360deg); 
+            color: #000;}
+    60%  {  transform: scale(2) rotate(480deg);  }
+    100% {  transform: scale(1.2) rotate(1080deg); 
+            font-weight: 900;}
+}
+
+@keyframes apareixDreta{
+    0% {transform: translateX(2000px);
+        opacity: 0;}
+    100% {transform: translateX(0px);
+        opacity: 100;}
+}
+
+@keyframes colorDia {
+    0%   { background-color: #000;}
+    5%   { background-color: #380000;}
+    10%   { background-color: #915700;}
+    15%   { background-color: #87cf00;}
+    20%   { background-color: #31c238;}
+    25%  { background-color: rgb(209, 255, 4)}
+    30%  { background-color: rgb(204, 226, 0)}
+    35%  { background-color: rgb(255, 232, 21)}
+    40%  { background-color: rgb(255, 193, 21)}
+    45%  { background-color: rgb(231, 73, 0)}
+   50%  { background-color: #380000}
+    55%   { background-color: #000;}
+    60%   { background-color: #000a38;}
+    65%   { background-color: #190074;}
+    70%   { background-color: #2256ff;}
+    75%   { background-color: #2f5dbe;}
+    80%  { background-color: #18429c}
+    85%  { background-color: #10396e}
+    90%  { background-color: #250e8d}
+    95%  { background-color: #180144}
+   100%  { background-color: #000000}
+}
+
+@keyframes diaNit{
+    0% {opacity: 0.2;}
+    10% {opacity: 1;}
+    50%{ opacity: 1;}
+    60%{ opacity: 0.15;}
+    90%{ opacity: 0.15;}
+    100%{ opacity: 0.4;}
 }
