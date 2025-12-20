@@ -1,94 +1,112 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Xavier Vallverdú i Poblet">
-    <meta name="description" content="Pàgina dedicada als aprofitaments forestals.">
-    <meta name="keywords" content="Bosc, Forestal, Bolets, Llenya, Aprofitament Forestal">
-    <link rel="icon" type="image/svg" href="img/forest.svg">
-    <link rel="stylesheet" href="css/style.scss">
-    <title>Inici</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Xavier Vallverdú i Poblet">
+  <meta name="description" content="Pàgina dedicada als aprofitaments forestals.">
+  <meta name="keywords" content="Bosc, Forestal, Bolets, Llenya, Aprofitament Forestal">
+  <link rel="icon" type="image/svg" href="img/forest.svg">
+  <link rel="stylesheet" href="css/style.scss">
+  <title>Inici</title>
 </head>
-  <body>
-<include src="views/nav.html"></include>
-<include src="views/popup.html"></include>
-    <header class="header-portada">
-          
-      <div class="fons-fosc-transparent">
-        <h1>Muntanyes de Prades</h1>
-        <p>Descobreix la història viva del món rural.</p>
-        
-      </div>
-      
-    </header>
-    <main>
+
+<body>
+  <include src="views/nav.html"></include>
+  <include src="views/popup.html"></include>
+  <header class="header-portada">
+
+    <div class="fons-fosc-transparent">
+      <h1>Muntanyes de Prades</h1>
+      <p>Descobreix la història viva del món rural.</p>
+
+    </div>
+
+  </header>
+  <main>
 
 
-      <div class="content-inici">
-        <article>
-          <h2>Les Muntanyes de Prades</h2>
-          <img src="/src/img/bosc2.jpg">
-          <p>Les Muntanyes de Prades formen un massís espectacular que s’estén entre les comarques del Baix Camp, el Priorat i la Conca de Barberà, un autèntic paradís per als amants de la natura. El paisatge destaca per la seva combinació de pinedes, alzinars i cingleres de gresos rogencs que donen un caràcter únic a la zona. Cada estació transforma el territori amb colors intensos, convertint-lo en un destí que sorprèn una vegada i una altra.</p>
-          <p>Aquest entorn és ideal per a senderistes i excursionistes que busquen rutes variades, des de camins suaus entre boscos fins a ascensions més exigents com el Tossal de la Baltasana, un dels punts més emblemàtics del massís. Al llarg del recorregut, els visitants poden descobrir fonts naturals, ermites amagades i miradors impressionants amb vistes que s’estenen fins al mar Mediterrani. La biodiversitat hi és exuberant: ocells rapinyaires, cabres salvatges i una flora plena d’espècies aromàtiques.</p>
-        </article>
+    <div class="content-inici">
+      <article>
+        <h2>Les Muntanyes de Prades</h2>
+        <picture>
+          <source srcset="/src/img/bosc2.jpg?as=avif" type="image/avif">
+          <source srcset="/src/img/bosc2.jpg?as=webp" type="image/webp">
+          <img src="/src/img/bosc2.jpg" alt="Vistes al Camp de Tarragona des de les Muntanyes de Prades">
+        </picture>
+        <img>
+        <p>Les Muntanyes de Prades formen un massís espectacular que s’estén entre les comarques del Baix Camp, el
+          Priorat i la Conca de Barberà, un autèntic paradís per als amants de la natura. El paisatge destaca per la
+          seva combinació de pinedes, alzinars i cingleres de gresos rogencs que donen un caràcter únic a la zona. Cada
+          estació transforma el territori amb colors intensos, convertint-lo en un destí que sorprèn una vegada i una
+          altra.</p>
+        <p>Aquest entorn és ideal per a senderistes i excursionistes que busquen rutes variades, des de camins suaus
+          entre boscos fins a ascensions més exigents com el Tossal de la Baltasana, un dels punts més emblemàtics del
+          massís. Al llarg del recorregut, els visitants poden descobrir fonts naturals, ermites amagades i miradors
+          impressionants amb vistes que s’estenen fins al mar Mediterrani. La biodiversitat hi és exuberant: ocells
+          rapinyaires, cabres salvatges i una flora plena d’espècies aromàtiques.</p>
+      </article>
 
-        <h2>Categories</h2>
-        <section id="categories" class="content-categories">
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/viola.jpg" alt="bolets">
-              <h3>Pobles</h3>
-            </div>
-          </a>
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/flor.jpg" alt="Fotografia d'una violeta de bosc">
-              <h3>Rutes</h3>
-            </div>
-          </a>
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/pastures2.jpg" alt="Fotografia d'una cabra">
-              <h3>Ecoturisme</h3>
-            </div>
-          </a>
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/construcció.jpg" alt="Fotografia d'una planta coberta de rosada">
-              <h3>Allotjament</h3>
-            </div>
-          </a>
+      <h2>Categories</h2>
+      <section id="categories" class="content-categories">
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/viola.jpg?width:300px" srcset="/src/img/viola.jpg?width:600px 2x,
+                        /src/img/viola.jpg?width:900px 3x," alt="Viola del bosc">
+            <h3>Pobles</h3>
+          </div>
+        </a>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/flor.jpg?width:300px" srcset="/src/img/flor.jpg?width:600px 2x,
+                        /src/img/flor.jpg?width:900px 3x," alt="Fotografia de Lligabosc florit">
+            <h3>Rutes</h3>
+          </div>
+        </a>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/pastures2.jpg" alt="Fotografia d'una cabra">
+            <h3>Ecoturisme</h3>
+          </div>
+        </a>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/construcció.jpg" alt="Fotografia d'una construcció de fusta">
+            <h3>Allotjament</h3>
+          </div>
+        </a>
 
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/entreteniment.jpg" alt="Entreteniment">
-              <h3>Entreteniment</h3>
-            </div>
-          </a>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/entreteniment.jpg" alt="Fotografia de ponts penjants als arbres">
+            <h3>Entreteniment</h3>
+          </div>
+        </a>
 
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/bolets7.jpg" alt="bolets">
-              <h3>Gastronomia</h3>
-            </div>
-          </a>
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/trompetes.jpg" alt="Fotografia d'una planta coberta de rosada">
-              <h3>Botànica</h3>
-            </div>
-          </a>
-          <a href="/src/categoria.html">
-            <div class="categoria">
-              <img src="/src/img/llenya1.jpg" alt="Llenya">
-              <h3>Món rural</h3>
-            </div>
-          </a>
-        </section>
-      </div>
-    </main>
-    <include src="views/footer.html"></include>
-    <script src="/src/scripts/app.js"></script>
-  </body>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/bolets7.jpg" alt="Fotografia d'un volet al bosc">
+            <h3>Gastronomia</h3>
+          </div>
+        </a>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/trompetes.jpg" alt="Fotografia d'unes trompetes de la mort">
+            <h3>Botànica</h3>
+          </div>
+        </a>
+        <a href="/src/categoria.html">
+          <div class="categoria">
+            <img src="/src/img/llenya1.jpg" alt="Fotografia de llenya apilada">
+            <h3>Món rural</h3>
+          </div>
+        </a>
+      </section>
+    </div>
+  </main>
+  <include src="views/footer.html"></include>
+  <script src="/src/scripts/app.js"></script>
+</body>
+
 </html>
