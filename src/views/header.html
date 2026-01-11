@@ -1,3 +1,46 @@
+<style>
+    .header-general{
+    height: 320px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("/src/img/boscH.webp");
+        background-image: image-set(
+        url("/src/img/boscH406px.webp") 1x,
+        url("/src/img/boscH812x2px.webp") 2x,
+        url("/src/img/boscH1218x3px.webp") 3x,
+    );
+    @media (min-width: 407px) {
+    background-image: image-set(
+        url("/src/img/boscH812px.webp") 1x,
+        url("/src/img/boscH1624x2px.webp") 2x,
+        url("/src/img/boscH3248px.webp") 3x,
+    );                
+    }
+    @media (min-width: 813px) {
+    background-image: image-set(
+        url("/src/img/boscH1218px.webp") 1x,
+        url("/src/img/boscH2436px.webp") 2x,
+        url("/src/img/boscH3654px.webp") 3x,
+    );                
+    }
+    @media (min-width: 1219px) {
+    background-image: image-set(
+        url("/src/img/boscH1624px.webp") 1x,
+        url("/src/img/boscH3248px.webp") 2x,
+        url("/src/img/boscH3654px.webp") 3x,
+    );                
+    }
+    @media (min-width: 1625px) {
+    background-image: image-set(
+        url("/src/img/boscH2436px.webp") 1x,
+        url("/src/img/boscH3654px.webp") 2x,
+    );                
+    }
+}
+</style>
+
 <header class="header-general"  fetchpriority="high">
     <div class="fons-fosc-transparent">
         <h1>Muntanyes de Prades</h1>
