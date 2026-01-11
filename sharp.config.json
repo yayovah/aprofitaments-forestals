@@ -5,9 +5,12 @@
     "chromaSubsampling": "4:4:4"
   },
   "webp": {
-    "quality": 50,
+"quality": 45,
     "lossless": false,
-    "effort": 6
+    "effort": 6,
+    "smartSubsampling": true,
+    "reductionEffort": 6,
+    "alphaQuality": 50
   },
   "png": {
     "palette": true,
