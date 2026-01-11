@@ -5,7 +5,7 @@
     "chromaSubsampling": "4:4:4"
   },
   "webp": {
-"quality": 45,
+    "quality": 45,
     "lossless": false,
     "effort": 6,
     "smartSubsampling": true,
