@@ -1,3 +1,44 @@
+.fons_portada{
+    background-color: #000;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('/src/img/vialactea.jpg');
+    background-image: image-set(
+        url("/src/img/vialactea.jpg?width=406") 1x,
+        url("/src/img/vialactea.jpg?width=812") 2x,
+        url("/src/img/vialactea.jpg?width=1218") 3x,
+    );
+    @media (min-width: 407px) {
+    background-image: image-set(
+        url("/src/img/vialactea.jpg?width=812") 1x,
+        url("/src/img/vialactea.jpg?width=1624") 2x,
+        url("/src/img/vialactea.jpg?width=3248") 3x,
+    );                
+    }
+    @media (min-width: 813px) {
+    background-image: image-set(
+        url("/src/img/vialactea.jpg?width=1218") 1x,
+        url("/src/img/vialactea.jpg?width=2436") 2x,
+        url("/src/img/vialactea.jpg?width=3654") 3x,
+    );                
+    }
+    @media (min-width: 1219px) {
+    background-image: image-set(
+        url("/src/img/vialactea.jpg?width=1624") 1x,
+        url("/src/img/vialactea.jpg?width=3248") 2x,
+        url("/src/img/vialactea.jpg?width=3654") 3x,
+    );                
+    }
+    @media (min-width: 1625px) {
+    background-image: image-set(
+        url("/src/img/vialactea.jpg?width=2436") 1x,
+        url("/src/img/vialactea.jpg?width=3654") 2x,
+    );                
+    }
+}
+
 .header-portada{
     height: 100vh;
     position: relative;
@@ -65,8 +106,6 @@
     }
     
 }
-
-
 
 .content-categories{
     display: flex;
