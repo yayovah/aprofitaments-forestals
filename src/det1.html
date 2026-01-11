@@ -28,7 +28,7 @@
                     <source media="(min-width: 1024px)" srcset="/src/img/pobles/Prades-destacada.jpg?as=webp">
                     <source media="(min-width: 896px)" srcset="/src/img/pobles/Prades-destacada.jpg?as=webp&width=1024">
                     <source media="(min-width: 650px)" srcset="/src/img/pobles/Prades-Destacada895.jpg?as=webp&width=896">
-                    <img src="/src/img/pobles/Prades-Destacada895.jpg?as=webp&width=400" alt="Vista de Prades">
+                    <img src="/src/img/pobles/Prades-Destacada895.jpg?as=webp&width=400" alt="Vista de Prades" fetchpriority="high">
                 </picture>
                 <p>Prades és una pintoresca vila situada a la comarca del Baix Camp, a Catalunya, coneguda per la seva
                     bellesa natural i l’encant del seu nucli històric. Rodejada per la serra de Prades, aquest municipi
@@ -71,7 +71,10 @@
             <iframe src="https://www.youtube.com/embed/ogTKqxMJl7w?si=jmwxIZcPqGTsiE9k" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                width="560"
+                height="315"
+                ></iframe>
         </section>
     </main>
     <include src="views/footer.html"></include>
