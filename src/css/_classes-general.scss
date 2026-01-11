@@ -4,37 +4,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("/src/img/bosc.jpg");
+    background-image: url("/src/img/boscH.jpg");
         background-image: image-set(
-        url("/src/img/bosc406px.jpg") 1x,
-        url("/src/img/bosc812px.jpg") 2x,
-        url("/src/img/bosc1218px.jpg") 3x,
+        url("/src/img/boscH406px.jpg") 1x,
+        url("/src/img/boscH812x2px.jpg") 2x,
+        url("/src/img/boscH1218x3px.jpg") 3x,
     );
     @media (min-width: 407px) {
     background-image: image-set(
-        url("/src/img/bosc812px.jpg") 1x,
-        url("/src/img/bosc1624px.jpg") 2x,
-        url("/src/img/bosc3248px.jpg") 3x,
+        url("/src/img/boscH812px.jpg") 1x,
+        url("/src/img/boscH1624x2px.jpg") 2x,
+        url("/src/img/boscH3248px.jpg") 3x,
     );                
     }
     @media (min-width: 813px) {
     background-image: image-set(
-        url("/src/img/bosc1218px.jpg") 1x,
-        url("/src/img/bosc2436px.jpg") 2x,
-        url("/src/img/bosc3654px.jpg") 3x,
+        url("/src/img/boscH1218px.jpg") 1x,
+        url("/src/img/boscH2436px.jpg") 2x,
+        url("/src/img/boscH3654px.jpg") 3x,
     );                
     }
     @media (min-width: 1219px) {
     background-image: image-set(
-        url("/src/img/bosc1624px.jpg") 1x,
-        url("/src/img/bosc3248px.jpg") 2x,
-        url("/src/img/bosc3654px.jpg") 3x,
+        url("/src/img/boscH1624px.jpg") 1x,
+        url("/src/img/boscH3248px.jpg") 2x,
+        url("/src/img/boscH3654px.jpg") 3x,
     );                
     }
     @media (min-width: 1625px) {
     background-image: image-set(
-        url("/src/img/bosc2436px.jpg") 1x,
-        url("/src/img/bosc3654px.jpg") 2x,
+        url("/src/img/boscH2436px.jpg") 1x,
+        url("/src/img/boscH3654px.jpg") 2x,
     );                
     }
 }
