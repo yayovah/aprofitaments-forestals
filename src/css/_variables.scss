@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Coiny';
+  src: url('../fonts/Coiny-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sigmar';
+  src: url('../fonts/Sigmar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
 /*COLORS*/
 $color-principal: #78a19d;
 $color-secundari: #412200;
